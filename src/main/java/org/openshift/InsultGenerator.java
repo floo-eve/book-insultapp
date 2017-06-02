@@ -42,7 +42,8 @@ public class InsultGenerator {
 
 		}
 		catch(Exception e) {
-			return "Database connection problem";
+			e.printStackTrace();
+			return "Database connection problem" + e.getMessage();
 		}
 
 		return theInsult;
